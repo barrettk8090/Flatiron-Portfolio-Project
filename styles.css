@@ -77,6 +77,39 @@ a:visited{
     margin-left: 100px;
     margin-right:100px;
     padding-top: 150px;
+    padding-bottom:150px;
+}
+
+#future-projects h3{
+    font-size: 3rem;
+    font-family: 'SF Pro', sans-serif;
+    padding-top: 100px;
+    color:white;
+
+}
+
+#future-projects > .container > p{
+    font-size: 1.5rem;
+    font-family: 'SF Pro', sans-serif;
+    font-weight:900;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#project-cards{
+    max-width:1000px;
+}
+
+.individual-card{
+    display:inline-block;
+    background-color:white;
+    max-width: 400px;
+    margin-right:15px;
+}
+
+.individual-card p{
+    color:black;
 }
 
 /* Media Query for responsiveness */
