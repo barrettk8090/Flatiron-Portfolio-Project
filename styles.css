@@ -121,7 +121,13 @@ a:visited{
 
 @media (max-width: 705px){
     h1{
-        font-size: 5rem;
+        font-size: 3rem;
+        margin-left:20px;
+    }
+
+    h2{
+        font-size:2rem;
+        margin-left:20px;
     }
 
     #navbar ul{
@@ -131,6 +137,19 @@ a:visited{
 
     #navbar ul li{
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    #about-me{
+        padding: 25px;
+    }
+
+    #about-me p {
+        font-size:24px;
+        font-weight: 400;
+        margin:0 auto;
+        padding-top:0;
+        padding-bottom: 0;
     }
 }
