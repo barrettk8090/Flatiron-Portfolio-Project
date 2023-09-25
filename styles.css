@@ -1,4 +1,4 @@
-boyd, h1, h2, h3, p, ul{
+body, h1, h2, h3, p, ul{
     margin:0;
     padding:0;
 }
@@ -94,11 +94,21 @@ a:visited{
     font-weight:900;
     color:white;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #project-cards{
     max-width:1000px;
+}
+
+
+
+footer{
+    font-family: 'SF Pro', sans-serif;
+    font-weight:900;
+    color:white;
+    display:flex;
+    justify-content: center;
 }
 
 .individual-card{
@@ -106,10 +116,21 @@ a:visited{
     background-color:white;
     max-width: 400px;
     margin-right:15px;
+    border-radius: 1%;
+    margin-bottom: 15px;
 }
 
 .individual-card p{
     color:black;
+    font-family: 'SF Pro', sans-serif;
+    padding-left: 25px;
+    padding-right:25px;
+    padding-bottom: 20px;
+}
+
+.card-title{
+    font-family: 'SF Pro', sans-serif;
+    padding-left: 15px;
 }
 
 /* Media Query for responsiveness */
