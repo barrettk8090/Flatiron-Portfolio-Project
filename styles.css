@@ -3,182 +3,130 @@ body, h1, h2, h3, p, ul{
     padding:0;
 }
 
-body{
-    background-color: #1C3738
-    ;
-  }
+@font-face{
+    font-family: TASAOrbiterVF;
+    src: url('TASAOrbiterVF.woff2'), url('TASAOrbiterVF.woff2') format('woff2');}
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:20px
+@font-face{
+    font-family: TASAOrbiterDisplay-Bold;
+    src: url('TASAOrbiterDisplay-Bold.otf'), url('TASAOrbiterDisplay-Bold.otf') format('otf');}
+
+@font-face{
+    font-family: TASAOrbiterDisplay-Black;
+    src: url('TASAOrbiterDisplay-Black.otf'), url('TASAOrbiterDisplay-Black.otf') format('otf');}    
+
+a {
+    text-decoration: none;
 }
 
-h1{
-    font-family: 'SF Pro', sans-serif;
-    padding-top:50px;
-    margin-left:40px;
-    color:white;
-    font-size: 12rem;
-    line-height: 1;
+#title{
+    transition: 0.1s;
 }
 
-h2{
-    font-family: 'SF Pro', sans-serif;
-    padding-top: 100px;
-    padding-bottom:100px;
-    margin-left:40px;
-    color:white;
-    font-size: 4rem;
-
-}
-
-#navbar {
-    display: flex;
+#navbar{
+    display:flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-content: center;
-    color:#fff;
-    padding: 20px;
 }
 
 #navbar ul {
     list-style: none;
-    display: flex;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    padding: 20px;
 }
 
-#navbar li {
-    margin-right: 20px;
-    font-family: 'SF Pro', sans-serif;
-    font-weight: 400;
-    color: white;
+#line{
+    border-top: 1px solid gray;
 }
 
-a {
+#main-content{
+    display:flex;
+    justify-content: space-between;
+}
+
+#right ul{
+    list-style: none;
+    padding: 120px 140px 60px 90px;
+
+}
+
+#contact{
+    padding-top: 60px;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    margin-left:90px;
+    padding:10px 20px;
+    font-size: 16px;
+    border:none;
+    background-color: black;
+    color:white;
+    position:absolute;
+}
+
+button:hover{
+    padding: 12px 24px 12px 24px;
+    transition: 0.4s;
+}
+
+button a {
+    color:white;
     text-decoration: none;
-    color: #fff;
+}
+
+button a:visited{
+    color:white;
+}
+
+
+h1{
+    font-family: 'TASAOrbiterDisplay-Bold', sans-serif;
+    font-size: 90px;
+    margin: 200px 90px 60px 90px;
+    letter-spacing: 2px;
+    background: linear-gradient(to top, #E4C1F9 30%, transparent 15%);
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    max-width:500px;
+    padding-left:90px;
+    line-height: 30px;
+}
+
+.big-link{
+    font-family: 'TASAOrbiterDisplay-Bold', sans-serif;
+    font-size: 150px;
+    padding-bottom: 25px;
+    text-decoration: none;
+}
+
+.biglink a{
+    color:black;
+    text-decoration: none;
 }
 
 a:visited{
-    text-decoration: none;
-    color:#fff;
-}
-
-#about-me{
-    background-color: white;
-
-}
-
-#about-me p{
-    font-family: 'SF Pro', sans-serif;
-    font-weight:900;
-    color:#1C3738;
-    font-size: 4rem;
-    margin-left: 100px;
-    margin-right:100px;
-    padding-top: 150px;
-    padding-bottom:150px;
-}
-
-h3{
-    font-size: 3rem;
-    font-family: 'SF Pro', sans-serif;
-    padding-top: 100px;
-    color:white;
-
-}
-
-#future-projects > .container > p{
-    font-size: 1.5rem;
-    font-family: 'SF Pro', sans-serif;
-    font-weight:900;
-    color:white;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-#project-cards{
-    max-width:1000px;
-}
-
-
-
-footer{
-    font-family: 'SF Pro', sans-serif;
-    font-weight:900;
-    color:white;
-    display:flex;
-    justify-content: center;
-}
-
-.individual-card{
-    display:inline-block;
-    background-color:white;
-    max-width: 400px;
-    margin-right:15px;
-    border-radius: 25px;
-    margin-bottom: 15px;
-}
-
-.individual-card p{
-    color:gray;
-    font-family: 'SF Pro', sans-serif;
-    padding-left: 25px;
-    padding-right:25px;
-    padding-bottom: 20px;
-}
-
-.card-title{
-    font-family: 'SF Pro', sans-serif;
-    padding-left: 15px;
-}
-
-#experience {
-    background-color: white;
-}
-
-#experience h3{
     color:black;
 }
 
-/* Media Query for responsiveness */
-@media (max-width: 1040px){
-    h1{
-        font-size:8rem;
-    }
+#git > a:hover{
+    color:white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:black;
 }
 
-@media (max-width: 705px){
-    h1{
-        font-size: 3rem;
-        margin-left:20px;
-    }
-
-    h2{
-        font-size:2rem;
-        margin-left:20px;
-    }
-
-    #navbar ul{
-        text-align: center;
-        padding-top:10px;
-    }
-
-    #navbar ul li{
-        display: block;
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-
-    #about-me{
-        padding: 25px;
-    }
-
-    #about-me p {
-        font-size:24px;
-        font-weight: 400;
-        margin:0 auto;
-        padding-top:0;
-        padding-bottom: 0;
-    }
+#twit > a:hover{
+    color:white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#26a7de;
 }
+
+#link > a:hover{
+    color:white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#0072b1;
+}
+

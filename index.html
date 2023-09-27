@@ -8,68 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
+    <!-- Nav bar -->
+    <div id="navbar">
+        <ul>
+            <li title="Coming Soon">
+                JS Playground
+            </li>
+        </ul>
+    </div>
 
-    <section>
-        <div id="navbar">
-            <ul>
-                <li><a href=https://twitter.com/barrett_typing target="blank">Twitter</a></li>
-                <li><a href=https://github.com/barrettk8090 target="blank">Github</a></li>
-                <li><a href=https://www.linkedin.com/in/barrettkowalsky/ target="blank">LinkedIn</a></li>
-                <li><a href=https://www.barrettk.com/ target="blank">Photography</a></li>
-            </ul>
-        </div>
-        <hr> 
-    </section>
+    <!-- Line below nav bar -->
+    <div id="line">
+    </div>
 
-    <section id="intro-card">
-        <div class="container">
+    <!-- Main content section-->
+    <div id="main-content">
+
+        <div id="left">
             <h1>Barrett Kowalsky</h1>
-            <h2>Human Person.</h2>
-        </div>
-    </section>
-
-    <section id="about-me">
-        <div class="container">
-            <p>Hello! I'm Barrett Kowalsky, a software engineer currently enrolled in Flatiron School's Software Engineering bootcamp. Formerly, I worked as a project manager in digital agencies, most recently at a Shopify design & dev shop.</p>
-        </div>
-    </section>
-
-    <section id="future-projects">
-        <div class="container">
-            <h3> Future Projects</h3>
-            <p>While I'm still learning, I've been jotting down some project ideas as they come up - even if they're a bit silly. Check out the cards below:</p>
-            <!-- Card stack for individual project ideas-->
-            <div id="project-cards">
-                <div class="individual-card">
-                    <h4 class="card-title">smallscreen</h4>
-                    <p>I'm a huge fan of letterboxd for movies, and the watchlist has been instrumental in helping me queue up what's next. I'd love to engineer a similar project but specifically focused on television shows.</p>
-                </div>
-                <div class="individual-card">
-                    <h4 class="card-title">darker sky</h4>
-                    <p>R.I.P. DarkSky. Long live DarkSky. As a huge weather fanatic and as someone who longingly misses the days of being able to get the days forecast as a glance, I plan to create my own version of my favorite weather app. </p>
-                </div>
-                <div class="individual-card">
-                    <h4 class="card-title">bearings</h4>
-                    <p>Moving to a new city is hard. Getting your bearings in a new city is harder. With this app, I want to give users the ability to place special dots on a map with helpful contextual info so that they can begin orienting themselves in a new city.</p>
-                </div>
+            <p>Hello! I'm a Software Engineering student @ Flatiron School. Previously, I spent about 6 years working as a Project Manager at various digital agencies. I'm currently building my Javascript skills via Codewars, while refining some prior HTML and CSS knowledge. I'm most interested in front-end applications, cryptocurrency, and AI.</p>
+            <div id="contact">
+                <button onclick="window.location.href='mailto:barrettkowalsky@gmail.com';">
+                    Send me an email
+                </button>
             </div>
         </div>
-    </section>
 
-    <section id="experience">
-        <div class="container">
-            <h3>Experience</h3>
-            <hr/>
+        <div id="right">
+            <ul>
+                <li class="big-link" id="git">
+                    <a href=https://github.com/barrettk8090 target="blank" >Github ↗</a>
+                </li>
+                <li class="big-link" id="twit">
+                    <a href=https://twitter.com/barrett_typing target="blank">Twitter ↗</a>
+                </li>
+                <li class="big-link" id="link">
+                    <a href=https://www.linkedin.com/in/barrettkowalsky/ target="blank">LinkedIn ↗</a>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <footer>
-        <div>
-            <p> Copyright 2023 Barrett Kowalsky</p>
-        </div>
-    </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
