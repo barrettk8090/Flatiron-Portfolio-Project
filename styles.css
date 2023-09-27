@@ -46,7 +46,7 @@ a {
 
 #right ul{
     list-style: none;
-    padding: 120px 140px 60px 90px;
+    padding: 140px 140px 60px 90px;
 
 }
 
@@ -83,7 +83,7 @@ button a:visited{
 h1{
     font-family: 'TASAOrbiterDisplay-Bold', sans-serif;
     font-size: 90px;
-    margin: 200px 90px 60px 90px;
+    margin: 220px 90px 60px 90px;
     letter-spacing: 2px;
     background: linear-gradient(to top, #E4C1F9 30%, transparent 15%);
 }
