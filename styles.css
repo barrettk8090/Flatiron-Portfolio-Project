@@ -19,6 +19,15 @@ a {
     text-decoration: none;
 }
 
+#barrettk{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -3;
+    padding: 90px;
+}
+
 #title{
     transition: 0.1s;
 }
@@ -42,6 +51,7 @@ a {
 #main-content{
     display:flex;
     justify-content: space-between;
+    height: 100vh;
 }
 
 #right ul{
@@ -65,10 +75,10 @@ button {
     position:absolute;
 }
 
-button:hover{
+/* button:hover{
     padding: 12px 24px 12px 24px;
     transition: 0.4s;
-}
+} */
 
 button a {
     color:white;
@@ -83,7 +93,7 @@ button a:visited{
 h1{
     font-family: 'TASAOrbiterDisplay-Bold', sans-serif;
     font-size: 90px;
-    margin: 220px 90px 60px 90px;
+    margin: 280px 90px 60px 90px;
     letter-spacing: 2px;
     background: linear-gradient(to top, #E4C1F9 30%, transparent 15%);
 }
